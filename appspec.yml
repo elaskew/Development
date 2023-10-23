@@ -4,12 +4,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/app
-  - source: appsec.yml
-    destination: /home/ec2-user/app
-  - source: main.py
-    destination: /home/ec2-user/app
-  - source: myClass.py
-file_exists_behavior: OVERWRITE
+
 permissions:
   - object: /home/ec2-user/app
     owner: root
